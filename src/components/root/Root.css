@@ -1,0 +1,10 @@
+.root-container {
+    height: 100%;
+}
+
+.content-container {
+    margin: 24px 16px;
+    padding: 24px;
+    background-color: '#fff';
+    min-height: 280px;
+}

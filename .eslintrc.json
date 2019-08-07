@@ -1,0 +1,47 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended",
+        "prettier"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "rules": {
+        "react/default-props-match-prop-types": [2, { "allowRequiredDefaults": true }],
+        "react/no-access-state-in-setstate": 2,
+        "react/no-deprecated": 2,
+        "react/no-redundant-should-component-update": 2,
+        "react/no-render-return-value": 2,
+        "react/no-unsafe": [2, { "checkAliases": true }],
+        "react/no-unused-prop-types": [2],
+        "react/no-unused-state": 2,
+        "react/no-will-update-set-state": [2],
+        "react/prefer-es6-class": [2],
+        "prettier/prettier": [
+            2,
+            {
+                "singleQuote": true,
+                "tabWidth": 4,
+                "printWidth": 115
+            }
+        ]
+    }
+}
